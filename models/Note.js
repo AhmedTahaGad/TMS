@@ -2,6 +2,10 @@ import mongoose from "mongoose";
 
 const NotesSchema = new mongoose.Schema({
 
+    userId: {
+        type: String,
+        required: [true, "Please provide a user id"],
+    },
     title: {
         type: String,
         required: [true, "Please provide a title"],
